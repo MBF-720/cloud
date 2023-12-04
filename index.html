@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IOT Monitoring</title>
+</head>
+<body>
+    <div class="container">
+        <h1>IOT Monitoring Dashboard</h1>
+
+        <!-- Sensor Data Table Widget -->
+        <div class="widget">
+            <h2>Sensor Data Table</h2>
+            <table id="sensorDataTable">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Temperature (°C)</th>
+                        <th>Humidity (%)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- Temperature and Humidity Circles -->
+        <div class="temperature-container">
+            <div class="temperature-circle" id="temperatureCircle"></div>
+        </div>
+
+        <div class="humidity-container">
+            <div class="humidity-circle" id="humidityCircle"></div>
+        </div>
+
+        <!-- Bar Chart -->
+        <div class="chart-container">
+            <canvas id="humidityChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
